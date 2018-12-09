@@ -43,6 +43,13 @@ namespace Test.Controllers
             return View();
         }
 
+        public IActionResult DesignPatterns()
+        {
+            ViewData["Message"] = "Design Patterns";
+
+            return View();
+        }
+
         public IActionResult FrontEnd()
         {
             ViewData["Message"] = "Front-End Architecture";
