@@ -1,0 +1,399 @@
+﻿@{
+    ViewData["Title"] = "Big O Notation";
+}
+<h3>@ViewData["Message"]</h3>
+<style>
+    .custom-checkbox {
+        min-height: 1rem;
+        padding-left: 0;
+        margin-right: 0;
+        cursor: pointer;
+    }
+
+        .custom-checkbox .custom-control-indicator {
+            content: "";
+            display: inline-block;
+            position: relative;
+            width: 30px;
+            height: 10px;
+            background-color: #818181;
+            border-radius: 15px;
+            margin-right: 10px;
+            -webkit-transition: background .3s ease;
+            transition: background .3s ease;
+            vertical-align: middle;
+            margin: 0 16px;
+            box-shadow: none;
+        }
+
+            .custom-checkbox .custom-control-indicator:after {
+                content: "";
+                position: absolute;
+                display: inline-block;
+                width: 18px;
+                height: 18px;
+                background-color: #f1f1f1;
+                border-radius: 21px;
+                box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.4);
+                left: -2px;
+                top: -4px;
+                -webkit-transition: left .3s ease, background .3s ease, box-shadow .1s ease;
+                transition: left .3s ease, background .3s ease, box-shadow .1s ease;
+            }
+
+        .custom-checkbox .custom-control-input:checked ~ .custom-control-indicator {
+            background-color: #84c7c1;
+            background-image: none;
+            box-shadow: none !important;
+        }
+
+            .custom-checkbox .custom-control-input:checked ~ .custom-control-indicator:after {
+                background-color: #84c7c1;
+                left: 15px;
+            }
+
+        .custom-checkbox .custom-control-input:focus ~ .custom-control-indicator {
+            box-shadow: none !important;
+        }
+</style>
+<h3>@ViewData["Message"]</h3>
+<div class="container">
+    <table class="container">
+        <thead>
+            Sorting Algorithms
+            <tr>
+                <th>Questions</th>
+                <th>Dale</th>
+                <th>Will</th>
+                <th>D (Completed)</th>
+                <th>W (Completed)</th>
+            </tr>
+        </thead>
+        <tbody>
+
+            <tr>
+                <td>Quicksort (1)</td>
+                <td>Dale (1)</td>
+                <td>Will (1)</td>
+                <td>
+                    <label class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input">
+                        <span class="custom-control-indicator"></span>
+                    </label>
+                </td>
+                <td>
+                    <label class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input">
+                        <span class="custom-control-indicator"></span>
+                    </label>
+                </td>
+            </tr>
+            <tr>
+                <td>Mergesort (2)</td>
+                <td>Dale (2)</td>
+                <td>Will (2)</td>
+                <td>
+                    <label class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input">
+                        <span class="custom-control-indicator"></span>
+                    </label>
+                </td>
+                <td>
+                    <label class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input">
+                        <span class="custom-control-indicator"></span>
+                    </label>
+                </td>
+            </tr>
+            <tr>
+                <td>Timesort (3)</td>
+                <td>Dale (3)</td>
+                <td>Will (3)</td>
+                <td>
+                    <label class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input">
+                        <span class="custom-control-indicator"></span>
+                    </label>
+                </td>
+                <td>
+                    <label class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input">
+                        <span class="custom-control-indicator"></span>
+                    </label>
+                </td>
+            </tr>
+            <tr>
+                <td>Heapsort (4)</td>
+                <td>Dale (4)</td>
+                <td>Will (4)</td>
+                <td>
+                    <label class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input">
+                        <span class="custom-control-indicator"></span>
+                    </label>
+                </td>
+                <td>
+                    <label class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input">
+                        <span class="custom-control-indicator"></span>
+                    </label>
+                </td>
+            </tr>
+            <tr>
+                <td>Bubble Sort (5)</td>
+                <td>Dale (5)</td>
+                <td>Will (5)</td>
+                <td>
+                    <label class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input">
+                        <span class="custom-control-indicator"></span>
+                    </label>
+                </td>
+                <td>
+                    <label class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input">
+                        <span class="custom-control-indicator"></span>
+                    </label>
+                </td>
+            </tr>
+            <tr>
+                <td>Insertion Sort(6)</td>
+                <td>Dale (6)</td>
+                <td>Will (6)</td>
+                <td>
+                    <label class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input">
+                        <span class="custom-control-indicator"></span>
+                    </label>
+                </td>
+                <td>
+                    <label class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input">
+                        <span class="custom-control-indicator"></span>
+                    </label>
+                </td>
+            </tr>
+            <tr>
+                <td>Selection Sort (7)</td>
+                <td>Dale (7)</td>
+                <td>Will (7)</td>
+                <td>
+                    <label class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input">
+                        <span class="custom-control-indicator"></span>
+                    </label>
+                </td>
+                <td>
+                    <label class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input">
+                        <span class="custom-control-indicator"></span>
+                    </label>
+                </td>
+            </tr>
+            <tr>
+                <td>Tree Sort (8)</td>
+                <td>Dale (8)</td>
+                <td>Will (8)</td>
+                <td>
+                    <label class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input">
+                        <span class="custom-control-indicator"></span>
+                    </label>
+                </td>
+                <td>
+                    <label class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input">
+                        <span class="custom-control-indicator"></span>
+                    </label>
+                </td>
+            </tr>
+            <tr>
+                <td>Shell Sort (9)</td>
+                <td>Dale (9)</td>
+                <td>Will (9)</td>
+                <td>
+                    <label class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input">
+                        <span class="custom-control-indicator"></span>
+                    </label>
+                </td>
+                <td>
+                    <label class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input">
+                        <span class="custom-control-indicator"></span>
+                    </label>
+                </td>
+            </tr>
+            <tr>
+                <td>Bucket Sort (9)</td>
+                <td>Dale (9)</td>
+                <td>Will (9)</td>
+                <td>
+                    <label class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input">
+                        <span class="custom-control-indicator"></span>
+                    </label>
+                </td>
+                <td>
+                    <label class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input">
+                        <span class="custom-control-indicator"></span>
+                    </label>
+                </td>
+            </tr>
+            <tr>
+                <td>Radix Sort (9)</td>
+                <td>Dale (9)</td>
+                <td>Will (9)</td>
+                <td>
+                    <label class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input">
+                        <span class="custom-control-indicator"></span>
+                    </label>
+                </td>
+                <td>
+                    <label class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input">
+                        <span class="custom-control-indicator"></span>
+                    </label>
+                </td>
+            </tr>
+            <tr>
+                <td>Counting Sort (9)</td>
+                <td>Dale (9)</td>
+                <td>Will (9)</td>
+                <td>
+                    <label class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input">
+                        <span class="custom-control-indicator"></span>
+                    </label>
+                </td>
+                <td>
+                    <label class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input">
+                        <span class="custom-control-indicator"></span>
+                    </label>
+                </td>
+            </tr>
+            <tr>
+                <td>Cube Sort (9)</td>
+                <td>Dale (9)</td>
+                <td>Will (9)</td>
+                <td>
+                    <label class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input">
+                        <span class="custom-control-indicator"></span>
+                    </label>
+                </td>
+                <td>
+                    <label class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input">
+                        <span class="custom-control-indicator"></span>
+                    </label>
+                </td>
+            </tr>
+            <tr>
+                <td>Shell Sort (9)</td>
+                <td>Dale (9)</td>
+                <td>Will (9)</td>
+                <td>
+                    <label class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input">
+                        <span class="custom-control-indicator"></span>
+                    </label>
+                </td>
+                <td>
+                    <label class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input">
+                        <span class="custom-control-indicator"></span>
+                    </label>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<div class="container">
+    <table class="container">
+        <thead>
+            Searching Algorithms
+            <tr>
+                <th>Questions</th>
+                <th>Dale</th>
+                <th>Will</th>
+                <th>D (Completed)</th>
+                <th>W (Completed)</th>
+            </tr>
+        </thead>
+        <tbody>
+
+            <tr>
+                <td>Linear Search (1)</td>
+                <td>Dale (1)</td>
+                <td>Will (1)</td>
+                <td>
+                    <label class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input">
+                        <span class="custom-control-indicator"></span>
+                    </label>
+                </td>
+                <td>
+                    <label class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input">
+                        <span class="custom-control-indicator"></span>
+                    </label>
+                </td>
+            </tr>
+            <tr>
+                <td>Binary Search (2)</td>
+                <td>Dale (2)</td>
+                <td>Will (2)</td>
+                <td>
+                    <label class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input">
+                        <span class="custom-control-indicator"></span>
+                    </label>
+                </td>
+                <td>
+                    <label class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input">
+                        <span class="custom-control-indicator"></span>
+                    </label>
+                </td>
+            </tr>
+            <tr>
+                <td>Depth First Search (3)</td>
+                <td>Dale (3)</td>
+                <td>Will (3)</td>
+                <td>
+                    <label class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input">
+                        <span class="custom-control-indicator"></span>
+                    </label>
+                </td>
+                <td>
+                    <label class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input">
+                        <span class="custom-control-indicator"></span>
+                    </label>
+                </td>
+            </tr>
+            <tr>
+                <td>Breadth First Search (4)</td>
+                <td>Dale (4)</td>
+                <td>Will (4)</td>
+                <td>
+                    <label class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input">
+                        <span class="custom-control-indicator"></span>
+                    </label>
+                </td>
+                <td>
+                    <label class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input">
+                        <span class="custom-control-indicator"></span>
+                    </label>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
